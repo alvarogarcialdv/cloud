@@ -1,0 +1,632 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.4">
+    
+    
+      
+        <title>Conceptos básicos - COMPUTACIÓN EN LA NUBE - DE LA EMPRESA AL AULA</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bde7dde4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#conceptos-basicos" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="COMPUTACIÓN EN LA NUBE - DE LA EMPRESA AL AULA" class="md-header__button md-logo" aria-label="COMPUTACIÓN EN LA NUBE - DE LA EMPRESA AL AULA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            COMPUTACIÓN EN LA NUBE - DE LA EMPRESA AL AULA
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Conceptos básicos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Limpiar" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="COMPUTACIÓN EN LA NUBE - DE LA EMPRESA AL AULA" class="md-nav__button md-logo" aria-label="COMPUTACIÓN EN LA NUBE - DE LA EMPRESA AL AULA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    COMPUTACIÓN EN LA NUBE - DE LA EMPRESA AL AULA
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Inicio
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        Descripción
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Descripción" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Descripción
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objetivos/" class="md-nav__link">
+        Objetivos del proyecto
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Conceptos básicos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Conceptos básicos
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#virtualizacion" class="md-nav__link">
+    Virtualización
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-computing" class="md-nav__link">
+    Cloud computing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#big-data" class="md-nav__link">
+    Big Data
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Desarrollo
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Desarrollo" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Desarrollo
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../desarrollo/despliegue/" class="md-nav__link">
+        Despliegue del cloud
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../desarrollo/formaci%C3%B3n/" class="md-nav__link">
+        Acciones de formación
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../difusi%C3%B3n/difusi%C3%B3n/" class="md-nav__link">
+        Difusión
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../participantes/participantes/" class="md-nav__link">
+        Participantes
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      <label class="md-nav__link" for="__nav_6">
+        About
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../licencia/" class="md-nav__link">
+        Licencia
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#virtualizacion" class="md-nav__link">
+    Virtualización
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-computing" class="md-nav__link">
+    Cloud computing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#big-data" class="md-nav__link">
+    Big Data
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="conceptos-basicos">Conceptos básicos<a class="headerlink" href="#conceptos-basicos" title="Permanent link">&para;</a></h1>
+<p>En esta sección se explican los conceptos básicos que se abordan en el proyecto:</p>
+<h2 id="virtualizacion">Virtualización<a class="headerlink" href="#virtualizacion" title="Permanent link">&para;</a></h2>
+<p>Se puede definir la virtualización como “La creación de una versión virtual (lógica) de algún recurso tecnológico, como puede ser una plataforma de hardware, un sistema operativo, un dispositivo de almacenamiento u otros recursos de red” ( Wikipedia) . Otra posible definición sería  “Combinación de hardware y software que permite a un recurso físico funcionar como múltiples recursos lógicos” (El Arte de virtualización, FLOSSystems S.L.).</p>
+<p>Dentro del concepto de virtualización existen a su vez diferentes terminologías  y tipos siendo el más extendido a nivel de usuario la denominada virtualización de plataforma, que permite disponer de múltiples “máquinas virtuales” sobre la misma “máquina física” (soluciones muy conocidas como VirtualBox y VMWare Workstation, entre otras,  nos ofrecen esta funcionalidad). Este tipo de virtualización es ampliamente utilizada por administradores y desarrolladores para recrear y simular diferentes entornos.</p>
+<p>Los Centros de Proceso de Datos (CPDs) actuales están mayoritariamente “virtualizados” y la tendencia es emplear:</p>
+<ul>
+<li>Virtualización de plataforma para virtualizar máquinas (con tecnologías como KVM, Xen y VMWare ESXI).</li>
+<li>Virtualización a nivel de sistema operativo para crear los denominados contenedores (LXC , Docker y OpenVZ).</li>
+<li>Virtualizar el almacenamiento y la redes (Software Defined Networking, SDN).</li>
+</ul>
+<p>El uso  de tecnologías de virtualización es por lo tanto vital para cualquier profesional informático.</p>
+<h2 id="cloud-computing">Cloud computing<a class="headerlink" href="#cloud-computing" title="Permanent link">&para;</a></h2>
+<p>Cloud Computing  es un paradigma o modelo que permite ofrecer servicios de computación bajo demanda a través de una red. El objetivo es utilizar la tecnología para implantar infraestructuras “invisibles” que permitan convertir recursos como computación, almacenamiento, redes, aplicaciones, etc. en un servicio donde se pague por su uso  sin que sean necesarias inversiones iniciales. Permite a las organizaciones externalizar parte de su cómputo y de su almacenamiento a un proveedor que típicamente ofrece un modelo de pago por uso, o crear nubes privadas (on-premise) para tener las ventajas de las tecnologías cloud dentro de una organización, sin necesidad de depender de un proveedor público.</p>
+<p>La nube (cloud) es por lo tanto una metáfora que engloba recursos virtuales y físicos alojados y ofrecidos por un determinado proveedor (Cloud de Google, Cloud de Amazon, Cloud de Microsoft, ….) o de forma privada. Cada proveedor ofrece su servicios con un modelo de pago por uso (tiempo de uso de CPU, uso de almacenamiento, tráfico de red, etc..) siendo el objetivo principal ajustar el consumo de recursos a las necesidades de las aplicaciones y usuarios de forma dinámica, elástica y rápida adaptando el consumo a la demanda.  </p>
+<p>En el modelo tradicional las inversiones en hardware se quedan obsoletas en poco tiempo y la demanda de recursos de cómputo puede ser muy variable. Si hay un sobre-dimensionamiento parte de los recursos no son utilizados y es necesaria una inversión de hardware para determinados intervalos de tiempo, y con un sub-dimensionamiento si hay picos de carga que no se pueden atender, no se ofrece el servicio de forma adecuada.</p>
+<p>Existen tres modelos a la hora de desplegar un cloud:</p>
+<ul>
+<li>
+<p><strong>Cloud público</strong></p>
+<ul>
+<li>Servicio abierto al público ofrecido por un proveedor</li>
+<li>Recursos hardware propiedad del proveedor.</li>
+<li>Gestión del cloud por parte del proveedor.</li>
+<li>Suscripción del usuarios en el  proveedor (el tiempo que quieras).</li>
+<li>Pago por uso (usuarios, empresas, organizaciones, etc.).</li>
+</ul>
+</li>
+<li>
+<p><strong>Cloud privado</strong></p>
+<ul>
+<li>Uso exclusivo de una organización y/o múltiples usuarios.</li>
+<li>Gestión del cloud por la propia organización.</li>
+<li>Puede delegarse la gestión y operación a una compañía especializada.</li>
+<li>Recursos hardware propios.</li>
+</ul>
+</li>
+<li>
+<p><strong>Cloud híbrido</strong></p>
+<ul>
+<li>Dos o más infraestructuras de cloud distintas que aparecen como entidad única.</li>
+<li>Combinan ambos modelos de cloud (privado o público). Por ejemplo, se delega temporalmente en un cloud público cuando se excede la capacidad de cómputo de un cloud privado.</li>
+</ul>
+</li>
+</ul>
+<p>El campo de cloud computing es muy amplio y es posible realizar varias clasificaciones y diferenciar entre múltiples tipos de cloud con diversidad de matices, pero la clasificación más genérica y extendida es la que se propone a continuación:</p>
+<ul>
+<li><strong>Software as a service (SaaS).</strong><ul>
+<li>Orientado a usuarios.</li>
+<li>Aplicaciones ejecutando sobre una infraestructura cloud son ofrecidas como servicio.</li>
+<li>Los usuarios pagan por el uso, no por poseer el software (ni siquiera licencias)</li>
+<li>Ejemplos: Dropbox, Google Drive, Evernote, Office 365, …</li>
+</ul>
+</li>
+<li><strong>Platform as a service (PaaS)</strong><ul>
+<li>Orientado a desarrolladores.</li>
+<li>Plataforma de software y entornos de desarrollo y pruebas ofrecidos como servicio.</li>
+<li>Abstrae hardware y servicios.</li>
+<li>Permite el despliegue y ejecución de aplicaciones.</li>
+<li>Servicio para todas las fases de desarrollo y pruebas de software.</li>
+<li>Ejemplos<ul>
+<li>Proveedores de PaaS públicos: OpenShitft, Heroku, Google App Engine, Microsoft Azure, Amazon Web Services, Force.com, Jelastic …</li>
+<li>Software para desplegar PaaS: OpenShitft Origin, Deis, Cloudfoundry Dokku, Tsuru, Apache Stratos, …</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Infrastructure as a service (IaaS)</strong><ul>
+<li>Orientado a administradores.</li>
+<li>Capacidades de cómputo,  almacenamiento y red (máquinas/hardware) ofrecidas como servicio. Se ofrecen máquinas virtuales.</li>
+<li>Ejemplos<ul>
+<li>Proveedores de Iaas:  Amazon Web Services, RackSpace Google Compute Engine, Microsoft Azure Service Plataform, HP Cloud, GoGrid, …</li>
+</ul>
+</li>
+<li>Software para desplegar IaaS:  OpenStack,  OpenNebula, Cloudstack Eucalyptus, Vmware vCloud, …</li>
+</ul>
+</li>
+</ul>
+<p>De hecho, la tendencia es ofrecer cada vez más cualquier tipo de recurso como un servicio y se suele hablar del término:  XaaS (Anything as a Service).</p>
+<h2 id="big-data">Big Data<a class="headerlink" href="#big-data" title="Permanent link">&para;</a></h2>
+<p>Big Data es un término común bajo el que se agrupan toda clase de técnicas de tratamiento de grandes volúmenes de datos, fuera de los análisis y herramientas clásicas. Este concepto engloba muchas ideas y aproximaciones, pero todas con un objetivo común: extraer información de valor de los datos, de forma que pueda ser de ayuda para las decisiones y procesos de negocio (fuente: UAM).</p>
+<p>Todos somos conscientes de que las grandes compañías (en todos los ámbitos) recopilan una gran cantidad de información, cada vez mayor, que gracias a las nuevas capacidades de procesamiento se puede utilizar para analizar, averiguar y extraer patrones  que permiten responder a  muchas respuestas e incluso “averiguar el futuro”. El valor está en comprender los datos.</p>
+<p>Destacar que los IaaS ofrecen un entorno muy adecuado para desplegar rápidamente clusters con la capacidad de cómputo y almacenamiento necesarios que permitan gestionar estas cantidades de datos y el software que los analiza.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Pie">
+      
+        <a href="../objetivos/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              Objetivos del proyecto
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../../desarrollo/despliegue/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              Despliegue del cloud
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.term.missing": "Falta"}, "search": "../../assets/javascripts/workers/search.4fa0e4ee.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1d3bfcf1.min.js"></script>
+      
+    
+  </body>
+</html>
