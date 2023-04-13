@@ -1,0 +1,36 @@
+site_name: COMPUTACIÓN EN LA NUBE - DE LA EMPRESA AL AULA
+nav:
+- Inicio: 'README.md'
+- Descripción: 
+  - Objetivos del proyecto: 'descripción/objetivos.md'
+  - Conceptos básicos: 'descripción/conceptos.md'
+- Desarrollo: 
+  - Despliegue del cloud: 'desarrollo/despliegue.md'
+  - Acciones de formación: 'desarrollo/formación.md'
+- Difusión: 'difusión/difusión.md'
+- Participantes: 'participantes/participantes.md'
+- About:
+    - 'Licencia': 'licencia.md'
+
+
+##theme: 'windmill'
+##theme: 'cinder'
+## theme: 'rtd-dropdown'
+theme:
+  name: 'material'
+  language: 'es'
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - extra
+  - attr_list: ~
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - def_list: ~
+  - footnotes: ~
+  - md_in_html: ~
+  - tables: ~
+  - toc:
+      permalink: true
