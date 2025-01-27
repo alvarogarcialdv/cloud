@@ -1,4 +1,4 @@
-# Computación en la nube: de la empresa al alula
+# Computación en la nube: de la empresa al aula
 
 El Departamento de Informática del [IES Leonardo da Vinci](https://www.ifpleonardo.com/) desarrolla junto a la empresa [FLOSSystems](https://flossystems.com/) el proyecto **“Computación en la nube: de la empresa al aula”**.
 
